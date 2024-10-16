@@ -3,7 +3,9 @@ import connectDB from './config/db.js'
 import workshopRouter from './routers/workshopRouter.js'
 import vehicleRouter from './routers/vehicleRouter.js'
 import maintenanceRouter from './routers/maintenanceRouter.js'
+import dotenv from "dotenv"
 
+dotenv.config()
 connectDB()
 
 const app = express()
